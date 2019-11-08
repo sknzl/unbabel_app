@@ -152,3 +152,6 @@ dmypy.json
 local_settings.py
 
 staticfiles/
+
+#tests
+tests/
