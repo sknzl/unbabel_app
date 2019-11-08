@@ -1,5 +1,5 @@
 # Unbabel App
-A Flask project showcasing a simple App translating from English to Spanish using the Unbabel API. The app can be easily extended to support any other language provided by Unbabel. Requests to the Unbabel API are done over an asynchronous job queue implemented with Celery, which makes the app highly scalable. Returned translations from the API are received from a callback route that delivers the finished translations with a websocket connection to the frontend. This avoids constant ajax polling and allows to display the finished translations the fastest way possible on the frontend.
+A Flask project showcasing a simple App translating from English to Spanish using the Unbabel API. The app can be easily extended to support any other language provided by Unbabel. Requests to the Unbabel API are done over an asynchronous job queue implemented with Celery, which makes the app highly scalable. Returned translations from the API are received from a callback route that delivers the finished translations with a WebSocket connection to the frontend. This avoids constant ajax polling and allows to display the finished translations the fastest way possible on the frontend.
 
 ## Stack
 - Python 3
