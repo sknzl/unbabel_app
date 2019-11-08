@@ -1,0 +1,28 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    {% if title %}{{ title }} - {% else %}Unbabel App{% endif %}
+{% endblock %}
+
+{% block styles %}
+{{super()}}
+<link rel="stylesheet"
+      href="{{url_for('.static', filename='style.css')}}">
+{% endblock %}
+
+{% block navbar %}
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% block app_content %}{% endblock %}
+    </div>
+{% endblock %}
+
+
+{% block scripts %}
+{{super()}}
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
+<script src="{{url_for('.static', filename='app.js')}}"></script>
+{% block app_scripts %}{% endblock %}
+{% endblock %}

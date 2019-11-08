@@ -1,0 +1,11 @@
+.vertical-spacing-10px{
+    margin: 20px 0;
+}
+
+.vertical-spacing-5px-top{
+    margin: 5px 0;
+}
+
+.remove-margin-bottom{
+    margin-bottom: 0px;
+}
