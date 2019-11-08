@@ -30,7 +30,7 @@ The easier option is ngrok (https://ngrok.com). Run ngrok with `ngrok http 5000`
 - Add the Heroku Redis add-on and scale the worker for Celery.
 - Set the `CALLBACK_HOST` environment variable to the heroku app address with `heroku config:set CALLBACK_HOST=...`.
 - Set the Unbabel API credentials in the environment variables with `heroku config:set UNBABEL_USERNAME=...` and `heroku config:set UNBABEL_API_KEY=...`.
-- A demo is deployed at https://peaceful-thicket-55361.herokuapp.com.
+- A demo is deployed at https://stormy-dawn-55587.herokuapp.com.
 
 ## Tests
 - run `python tests/tests.py`.
